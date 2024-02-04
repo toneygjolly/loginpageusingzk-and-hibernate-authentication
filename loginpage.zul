@@ -1,0 +1,67 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+ <navbar style="background-color: yellow;">
+    <navitem label="signup"></navitem>
+    <navitem label="more-information"></navitem>
+     <navitem label="contact"></navitem>
+</navbar>
+ 
+    <style>
+        .custom-window {
+            /* Specify the background image URL using url() function */
+            background-image: url('Screenshot (280).png');
+            /* Optionally, you can set background size and other properties */
+            background-size: cover;
+            /* Ensure the content is visible on top of the background image */
+            color: white; /* Example: Set text color to white */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure the window fills the entire viewport */
+        }
+        
+        .login-box {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+    
+    <window title="new page title" border="normal" sclass="custom-window" apply="controller.logincontroller">
+      
+       
+        <vlayout class="login-box">
+            <hlayout>
+                <label value="Username:"/>
+                <textbox id="usernameTextbox"/>
+            </hlayout>
+            <hlayout>
+                <label value="Password:"/>
+                <textbox id="passwordTextbox" type="password"/>
+            </hlayout>
+            <button label="Login" id="Q"/>
+            
+        </vlayout>
+    </window>
+</zk>
+		

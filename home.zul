@@ -1,0 +1,12 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="new page title" border="normal" apply="controller.logincontroller">
+ <navbar style="background-color: yellow;">
+    <navitem label="signup"></navitem>
+    <navitem label="more-information"></navitem>
+     <navitem id="contactNavItem"></navitem>
+</navbar>
+<label id="i1">ddddddddd</label>
+dddddddddddd
+</window>
+</zk>
